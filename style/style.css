@@ -65,7 +65,7 @@ h1, h5 {
 
 .imageArea { 
   grid-area: 1 / 2 / 2 / 3;
-  background-image: url(../assets/clothes-hanger.jpg);
+  background-image: url(../assets/clothes-hanger.jpg) no-repeat;
   background-position-y: -25rem;
   background-size: cover;
 }
