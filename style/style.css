@@ -27,7 +27,7 @@ body {
 .formArea {
   grid-area: 1 / 1 / 2 / 2;
   padding: 2rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   max-width: 600px;
 }
 
@@ -69,4 +69,15 @@ h1, h5 {
   background-size: cover;
   background-position-y: -20rem;
   background-repeat: no-repeat;
+}
+
+@media(max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formArea {
+    margin-top: 40px;
+  }
 }
