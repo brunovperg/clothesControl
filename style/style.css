@@ -9,18 +9,30 @@
   --color-title: #6b705c;
   --color-button: #b7b7a4;
   --color-primary: #515546;
+  --color-white: #ffffff;
+
+  --prussian-blue: #012a4aff;
+  --indigo-dye: #013a63ff;
+  --indigo-dye-2: #01497cff;
+  --usafa-blue: #014f86ff;
+  --honolulu-blue: #2a6f97ff;
+  --celadon-blue: #2c7da0ff;
+  --blue-green: #468fafff;
+  --maximum-blue: #61a5c2ff;
+  --dark-sky-blue: #89c2d9ff;
+  --light-blue: #a9d6e5ff;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--color-primary);
+  color: var(--light-blue);
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
   grid-template-rows: 1fr;
-  background-color: var(--background);
+  background-image: linear-gradient(to right top, #468faf, #569ba4, #74a49b, #93ab99, #acb1a1);
   height: 100vh;
 }
 
@@ -32,42 +44,53 @@ body {
 }
 
 h1, h5 {
-  color: var(--color-title);
+  color: var(--color-white);
 }
 
 .formArea form {
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 .formArea label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  color: var(--color-white);
 }
 
 .formArea label input {
   padding: 10px;
   width: 90%;
   margin-top: 4px;
-  border-radius: 6px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.formArea label input::placeholder {
+  color: var(--color-white);
 }
 
 .formArea button {
   margin-top: 20px;
-  background-color: var(--color-button);
+  background-image: radial-gradient(circle, #2c7da0, #3483a4, #3b89a8, #4390ab, #4b96af);
   padding: 10px;
   max-width: 90%;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 600;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .imageArea { 
   grid-area: 1 / 2 / 2 / 3;
-  background-image: url(../assets/clothes-hanger.jpg);
+  background-image: url(../assets/keagan-henman.jpg);
   background-size: cover;
-  background-position-y: -20rem;
   background-repeat: no-repeat;
 }
 
