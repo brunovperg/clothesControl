@@ -1,5 +1,8 @@
+document.getElementById('tamanho').selectedIndex = -1
+document.getElementById('vinculo').selectedIndex = -1
+
 function validar() {
-  
+
   let nome = document.getElementById('name').value
   let regExName = /^\s+|\s+$/g
 
@@ -11,7 +14,7 @@ function validar() {
   let funcao = document.getElementById('function').value
 
   if (funcao.replace(regExName, '').length === 0) {
-    alert('Preenhca o campo de Função!')
+    alert('Preencha o campo de Função!')
     funcao.focus()
   }
 }
