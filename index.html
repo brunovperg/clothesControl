@@ -22,28 +22,51 @@
 
       <h5>Preencha as informações abaixo</h5>
 
-      <form class="animate__animated animate__backInRight" action="">
-        <label for="">Nome completo
-          <input type="text" name="name" id="name" placeholder="Nome" required>
-        </label>
+      <form id="form" name="form" class="animate__animated animate__backInRight">
 
-        <label for="">Tamanho da roupa
-          <input type="text" name="clothingSize" id="clothingSize" placeholder="(P, M, G, GG, XG)" required>
-        </label>
+        <div class="form-control success">
+          <label for="name">Nome completo
+            <input type="text" name="name" id="name" placeholder="Nome" required>
+          </label>
+        </div>
 
-        <label for="">Função
-          <input type="text" name="function" id="function" placeholder="Função" required>
-        </label>
+        <div class="form-control error">
+          <label for="tamanho">Tamanho
+            <select name="tamanho" id="tamanho">
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+              <option value="XG">XG</option>
+            </select>
 
-        <label for="">Empresa/Vínculo
-          <input type="text" name="company" id="company" placeholder="Empresa / Vínculo" required>
-        </label>
+          </label>
+        </div>
 
-        <button type="submit" >Registrar</button>
+        <div class="form-control">
+          <label for="function">Função
+            <input type="text" name="function" id="function" placeholder="Função" required>
+          </label>
+        </div>
+
+        <div class="form-control">
+          <label for="vinculo">Vínculo
+            <select name="vinculo" id="vinculo" required>
+              <option value="FBHC">FBHC</option>
+              <option value="TERCEIRIZADA">Terceirizada</option>
+            </select>
+          </label>
+        </div>
+
+        <button type="submit" onclick="validar()">Registrar</button>
       </form>
+
     </div>
 
     <div class="imageArea">
 
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
+</body>

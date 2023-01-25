@@ -36,15 +36,15 @@ body {
   height: 100vh;
 }
 
+h1, h5 {
+  color: var(--color-white);
+}
+
 .formArea {
   grid-area: 1 / 1 / 2 / 2;
   padding: 2rem;
   margin: 5rem auto;
   max-width: 600px;
-}
-
-h1, h5 {
-  color: var(--color-white);
 }
 
 .formArea form {
@@ -68,7 +68,21 @@ h1, h5 {
   border: none;
   border-bottom: 1px solid var(--color-white);
   background-color: rgba(255, 255, 255, 0.3);
+}
 
+select {
+  padding: 10px;
+  width: 90%;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+select option {
+  background-color: var(--blue-green);
 }
 
 .formArea label input::placeholder {
@@ -86,6 +100,12 @@ h1, h5 {
   color: var(--color-white);
   cursor: pointer;
 }
+
+/*Simulação dos inputs error e success (INICIO)*/
+
+
+
+/*Simulação dos inputs error e success (FIM)*/
 
 .imageArea { 
   grid-area: 1 / 2 / 2 / 3;
